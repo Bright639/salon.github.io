@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - Frontend Developer</title>
+    <meta name="description" content="Personal Portfolio of Alex Chen - Frontend Developer">
+    <meta name="author" content="Alex Chen">
+    
+    <meta property="og:title" content="Alex Chen - Frontend Developer">
+    <meta property="og:description" content="Personal Portfolio of Alex Chen - Frontend Developer">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="#" class="nav__logo">Alex Chen</a>
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h3 class="home__subtitle">Hello, I'm</h3>
+                        <h1 class="home__title">Alex Chen</h1>
+                        <h3 class="home__subtitle">Frontend Developer</h3>
+                        <p class="home__description">
+                            Passionate about creating beautiful, functional, and user-centered digital experiences.
+                        </p>
+                        <a href="#contact" class="button">Contact Me</a>
+                    </div>
+                    
+                    <div class="home__social">
+                        <a href="https://linkedin.com" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__image">
+                    <img src="src/assets/profile-image.jpg" alt="Alex Chen" class="home__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="src/assets/profile-image.jpg" alt="Alex Chen" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        I'm a passionate frontend developer with 3+ years of experience creating 
+                        digital solutions that combine creativity with functionality. I specialize 
+                        in modern web technologies and love turning complex problems into simple, 
+                        beautiful designs.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">50+</span>
+                            <span class="about__info-name">Projects<br>completed</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">3+</span>
+                            <span class="about__info-name">Years<br>experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">20+</span>
+                            <span class="about__info-name">Happy<br>clients</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="#" class="button button--flex">
+                            Download CV
+                            <i class="ri-download-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Recent work</span>
+
+            <div class="projects__container container grid">
+                <div class="project__card">
+                    <img src="src/assets/project1.jpg" alt="Project 1" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">Dashboard Analytics</h3>
+                        <p class="project__description">
+                            A modern analytics dashboard with real-time data visualization, 
+                            built with React and D3.js for interactive charts.
+                        </p>
+                        <div class="project__buttons">
+                            <a href="https://example.com/demo" target="_blank" class="button button--small">
+                                <i class="ri-external-link-line"></i>
+                                Demo
+                            </a>
+                            <a href="https://github.com/example" target="_blank" class="button button--small button--ghost">
+                                <i class="ri-github-line"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card">
+                    <img src="src/assets/project2.jpg" alt="Project 2" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">E-Commerce Platform</h3>
+                        <p class="project__description">
+                            Full-featured e-commerce platform with shopping cart, payment integration, 
+                            and admin dashboard built with modern web technologies.
+                        </p>
+                        <div class="project__buttons">
+                            <a href="https://example.com/demo" target="_blank" class="button button--small">
+                                <i class="ri-external-link-line"></i>
+                                Demo
+                            </a>
+                            <a href="https://github.com/example" target="_blank" class="button button--small button--ghost">
+                                <i class="ri-github-line"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card">
+                    <img src="src/assets/project3.jpg" alt="Project 3" class="project__img">
+                    <div class="project__data">
+                        <h3 class="project__title">Task Management App</h3>
+                        <p class="project__description">
+                            Collaborative task management application with real-time updates, 
+                            drag-and-drop functionality, and team collaboration features.
+                        </p>
+                        <div class="project__buttons">
+                            <a href="https://example.com/demo" target="_blank" class="button button--small">
+                                <i class="ri-external-link-line"></i>
+                                Demo
+                            </a>
+                            <a href="https://github.com/example" target="_blank" class="button button--small button--ghost">
+                                <i class="ri-github-line"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Developer</h3>
+                    
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Vue.js</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">TypeScript</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend & Tools</h3>
+                    
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">MongoDB</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Webpack</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Docker</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <i class="ri-mail-line contact__card-icon"></i>
+                        <h3 class="contact__card-title">Email</h3>
+                        <span class="contact__card-data">alex.chen@email.com</span>
+                        <a href="mailto:alex.chen@email.com" class="contact__button">
+                            Write me
+                            <i class="ri-arrow-right-line contact__button-icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class="ri-phone-line contact__card-icon"></i>
+                        <h3 class="contact__card-title">Phone</h3>
+                        <span class="contact__card-data">+1 (555) 123-4567</span>
+                        <a href="tel:+15551234567" class="contact__button">
+                            Call me
+                            <i class="ri-arrow-right-line contact__button-icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class="ri-map-pin-line contact__card-icon"></i>
+                        <h3 class="contact__card-title">Location</h3>
+                        <span class="contact__card-data">San Francisco, CA</span>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Name</label>
+                        <input type="text" name="name" id="contact-name" placeholder="Enter your name" class="contact__form-input" required>
+                    </div>
+
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Email</label>
+                        <input type="email" name="email" id="contact-email" placeholder="Enter your email" class="contact__form-input" required>
+                    </div>
+
+                    <div class="contact__form-div contact__form-area">
+                        <label class="contact__form-tag">Message</label>
+                        <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Write your message" class="contact__form-input" required></textarea>
+                    </div>
+
+                    <button type="submit" class="button button--flex">
+                        Send Message
+                        <i class="ri-send-plane-line button__icon"></i>
+                    </button>
+
+                    <div class="contact__message" id="contact-message-result"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <h1 class="footer__title">Alex Chen</h1>
+                <span class="footer__subtitle">Frontend Developer</span>
+            </div>
+
+            <ul class="footer__links">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="https://linkedin.com" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">&#169; 2024 Alex Chen. All rights reserved</span>
+        </div>
+    </footer>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!-- RemixIcon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+</html>
